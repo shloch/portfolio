@@ -36,6 +36,7 @@
                 </div>
             </div>
             <nav class="navbar navbar-expand-lg" id="sticky-top">
+                    <div id="sticky-picture"></div>
                     <div class="navbar-nav">
                         <a href="#intro" class="nav-link">HOME</a>
                         <a href="#about" class="nav-link">ABOUT</a>
@@ -64,10 +65,13 @@
                             <p class="green1 percent my-bar progress-bar progress-bar-striped">Linux server administrator</p>
                         </div>
                         <div class="myProgress">
+                            <p class="yellow1 percent my-bar progress-bar progress-bar-striped">Javascript - React</p>
+                        </div>
+                        <div class="myProgress">
                             <p class="red1 percent my-bar progress-bar progress-bar-striped">Ruby - Ruby on rails</p>
                         </div>
                         <div class="myProgress">
-                            <p class="yellow1 percent my-bar progress-bar progress-bar-striped">Javascript - React</p>
+                            <p class="orange1 percent my-bar progress-bar progress-bar-striped">PHP - CodeIgniter</p>
                         </div>
                         <div class="myProgress">
                             <p class="blue1 percent my-bar progress-bar progress-bar-striped">HTML- CSS- Bootstrap</p>
@@ -179,34 +183,34 @@
                         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                            <div class="carousel-caption d-md-block">
-                                <h5>RECENT POST</h5>
-                                <a href="https://shloch.wordpress.com/2016/05/21/correct-cisco-command-unrecognized-at-exam/" target="_blank">Correct CISCO command, unrecognized at Exam...............<span class="blinking">Go to blog</span></a>
-                            </div>
-                            <div class="first color-ball">
-                                <div class="first side-ball-1"></div>
-                                <div class="first side-ball-2"></div>
-                            </div>
-                            </div>
-                            <div class="carousel-item">
-                            <div class="carousel-caption d-md-block">
-                                <h5>RECENT POST</h5>
-                                <a href="https://shloch.wordpress.com/2014/04/23/probable-future-school-laws-will-include-sanctions-on-internet-actions/" target="_blank">Probable future school laws will include sanctions on ..... <span class="blinking">Go to blog</span></a>
-                            </div>
-                            <div class="second color-ball">
-                                <div class="second side-ball-1"></div>
-                                <div class="second side-ball-2"></div>
-                            </div>
+                                <div class="carousel-caption d-md-block">
+                                    <h5>RECENT POST</h5>
+                                    <a href="https://shloch.wordpress.com/2016/05/21/correct-cisco-command-unrecognized-at-exam/" target="_blank">Correct CISCO command, unrecognized at Exam...............<span class="blinking">Go to blog</span></a>
+                                </div>
+                                <div class="first color-ball">
+                                    <div class="first side-ball-1"></div>
+                                    <div class="first side-ball-2"></div>
+                                </div>
                             </div>
                             <div class="carousel-item">
-                            <div class="carousel-caption d-md-block">
-                                <h5>RECENT POST</h5>
-                                <a href="https://shloch.wordpress.com/2010/10/" target="_blank">which to choose: tutorials or textbooks ?? ......................<span class="blinking">Go to blog</span></a>
+                                <div class="carousel-caption d-md-block">
+                                    <h5>RECENT POST</h5>
+                                    <a href="https://shloch.wordpress.com/2014/04/23/probable-future-school-laws-will-include-sanctions-on-internet-actions/" target="_blank">Probable future school laws will include sanctions on ..... <span class="blinking">Go to blog</span></a>
+                                </div>
+                                <div class="second color-ball">
+                                    <div class="second side-ball-1"></div>
+                                    <div class="second side-ball-2"></div>
+                                </div>
                             </div>
-                            <div class="third color-ball">
-                                <div class="third side-ball-1"></div>
-                                <div class="third side-ball-2"></div>
-                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-caption d-md-block">
+                                    <h5>RECENT POST</h5>
+                                    <a href="https://shloch.wordpress.com/2010/10/" target="_blank">which to choose: tutorials or textbooks ?? ......................<span class="blinking">Go to blog</span></a>
+                                </div>
+                                <div class="third color-ball">
+                                    <div class="third side-ball-1"></div>
+                                    <div class="third side-ball-2"></div>
+                                </div>
                             </div>
                             <div class="carousel-item">
                                 <div class="carousel-caption d-md-block">
@@ -263,10 +267,17 @@
     
     // code for fixed nav on scroll
     
-    // When the user scrolls the page, execute myFunction amimed at having at fixed nav on scroll
+//profile picture of navbar, hiden at first; then will be displayed on window scroll
+    let elem = document.createElement("img"); //creat image element
+    document.getElementById("sticky-picture").appendChild(elem); //apend image element to div 
+    elem.src = 'img/sticky-picture.png'; //give image element an actual
+    //elem.style.borderRadius = "50%";
+    elem.style.visibility = "hidden";
+
+// When the user scrolls the page, execute myFunction aimed a having at fixed nav on scroll
     window.onscroll = function() {
         stickyNavFunction()
-        };
+    };
     
     // Get the header
     var header = document.getElementById("sticky-top");
@@ -276,15 +287,20 @@
     
     // Add the sticky class to the profile picture when you reach its scroll position. Remove "sticky" when you leave the scroll position
     function stickyNavFunction() {
-      var src = document.getElementById("sticky-top");
+      let stickyNavigation = document.getElementById("sticky-top");
 
       if (window.pageYOffset > sticky) {
         header.classList.add("sticky");
+        elem.style.marginLeft = "30px";
+        elem.style.visibility = "visible";
         
       } else {
         header.classList.remove("sticky");
+        elem.style.marginLeft = "0px";
+        elem.style.visibility = "hidden";
         
       }
+        
     }
 
     </script>

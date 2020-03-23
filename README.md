@@ -1,5 +1,5 @@
 # Sample portfolio web page
-Building a modest porfolio page with BOOTSTRAP + js
+Building a modest developer porfolio page with BOOTSTRAP + js
 ![alt text](https://github.com/Shimele/shloch-portfolio/blob/master/img/portfolio.png)
 
 ## Live demo

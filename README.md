@@ -4,5 +4,5 @@ Building a modest developer porfolio page with BOOTSTRAP + js
 
 ## Live demo
 
-https://shimele.github.io/shloch-portfolio/
+https://shloch.github.io/porfolio/
 

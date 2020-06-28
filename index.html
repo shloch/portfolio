@@ -14,7 +14,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/907f68c39a.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" type="text/css" href="index.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
 
     <title>Shloch</title>
 </head>
@@ -32,6 +32,9 @@
                             administrator, with a passion for security.</p>
                         <p> I have <strong>CCNA, CCNP, LPIC-1</strong> and <strong> SUSE-Linux </strong> certifications
                         </p>
+                        <div id="image">
+                            <img src="img/profile.jpg" alt="profile picture" id="sticky-img">
+                        </div>
                     </div>
                     <div class="col-12">
                         <div id="fontawesome">
@@ -45,6 +48,7 @@
                     </div>
                 </div>
             </div>
+            
             <nav class="navbar navbar-expand-lg" id="sticky-top">
                 <div id="sticky-picture"></div>
                 <div class="navbar-nav">
@@ -55,9 +59,6 @@
                     <a href="#blog" class="nav-link">CONTACT</a>
                 </div>
             </nav>
-            <div id="image" data-aos="flip-right" data-aos-duration="500">
-                <img src="img/profile.jpg" alt="profile picture" id="sticky-img">
-            </div>
 
         </div>
     </section>
@@ -68,13 +69,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-6" data-aos="fade-right">
-                        <p> I am Curious, i learn pretty fast too. I believe in team work and the valuable contribution
-                            of the individuals of the group.
-                            I am also very much autonomous. I have worked in private firm, with government, in
-                            international company and in a remote situation.
-                            In case i am stuck or having a bug, i will do the necessary debugging/brainstorming and
-                            research to get the problem solved
-                            and get the company to complete projects in time and within required budget.
+                        <p> I am curious, and I learn pretty fast, too.
+                             I believe in team work and lifting up the valuable contributions of each individual in a group,
+                              but am also very much autonomous. I have worked in private firms,
+                               in government, in international companies, and remotely.
+                                If I'm stuck or dealing with a bug, I will do the necessary debugging,
+                                 brainstorming, and research in order to get the problem solved and 
+                                 make sure that I'm able to complete projects on time and within the required budget.
                         </p>
                     </div>
                     <div class="col-lg-6 col-md-6" data-aos="fade-left">
@@ -152,129 +153,204 @@
                 </div>
             </div>
             <div class="container-fluid add-margin">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-6 shadow p-3 mb-5 bg-white rounded img-hover-zoom coll">
-                        <img src="img/facebook.JPG" class="img-fluid">
-                        <a class="description">Facebook clone (Front+Backend) with Rails</a><br>
-                        <a href="https://github.com/shloch/Building_Facebook" class="fab fa-github code"
-                            title="view on Github"></a>
-                        <a href="https://nameless-bastion-79370.herokuapp.com/staticpages/home">Live Demo</a>
+                <div class="row first-row">
+                    <div class="col-lg-4 col-md-6 col-sm-6 coll flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/facebook.JPG" class="img-fluid">
+                                <p class="description">Facebook clone (Front+Backend) with Rails</p>
+                            </div>
+                            <div class="shadow-sm p-3 mb-5 rounded flip-card-back">
+                                <div class="shadow p-3 mb-5 rounded detail">
+                                     <p>Lorem ipsum dolor sit amet, eu duo veri lege pertinacia, impedit inciderint contentiones cu quo </p>
+                                </div>
+                                <div class='links'>
+                                    <a href="https://github.com/shloch/Building_Facebook" class="fab fa-github code"
+                                    title="view on Github"> Github </a>
+                                    <a href="https://nameless-bastion-79370.herokuapp.com/staticpages/home" class=''demo>Live Demo</a>
+                                 </div>
+                                
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6 shadow p-3 mb-5 bg-white rounded img-hover-zoom coll">
-                        <img src="img/battle-ship.JPG" class="img-fluid">
-                        <a class="description">Battle Ship Game with Javascript</a><br>
-                        <a href="https://github.com/shloch/battleship-game" class="fab fa-github code"
-                            title="view on Github"></a>
-                        <a
-                            href="https://rawcdn.githack.com/truetechcode/battleship-game/9768495e4e92db01a47aac64ca4ab17633435af0/dist/index.html">Live
-                            Demo</a>
+                    
+                    <div class="col-lg-4 col-md-6 col-sm-6 coll flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/battle-ship.JPG" class="img-fluid">
+                                <p class="description">Battle Ship Game with Javascript</p>
+                            </div>
+                            <div class="shadow-sm p-3 mb-5 rounded flip-card-back">
+                                <div class='shadow p-3 mb-5 rounded detail'>
+                                    <p>Lorem ipsum dolor sit amet, eu duo veri legendos, impedit inciderint contentiones cu quo</p> 
+                                </div>
+                                <div class="links">
+                                    <a href="https://github.com/shloch/battleship-game" class="fab fa-github code"
+                                    title="view on Github"> Github </a>
+                                    <a href="https://rawcdn.githack.com/truetechcode/battleship-game/9768495e4e92db01a47aac64ca4ab17633435af0/dist/index.html" class='demo'>Live
+                                    Demo</a>
+                                </div>
+                            </div>
+                            
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6 shadow p-3 mb-5 bg-white rounded img-hover-zoom coll">
-                        <img src="img/tic-tac-toe.JPG" class="img-fluid">
-                        <a class="description">TicTacToe Game with Javascript</a><br>
-                        <a href="https://github.com/shloch/TIC_TAC_TOE" class="fab fa-github code"
-                            title="view on Github"></a>
-                        <a href="https://raw.githack.com/shloch/TIC_TAC_TOE/development/index.html">Live Demo</a>
+                    <div class="col-lg-4 col-md-6 col-sm-6 coll flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/tic-tac-toe.JPG" class="img-fluid">
+                                <p class="description">TicTacToe Game with Javascript</p>
+                            </div>
+                            <div class="shadow-sm p-3 mb-5 rounded flip-card-back">
+                                <div class='shadow p-3 mb-5 rounded detail'>
+                                    <p>Lorem ipsum dolor sit amet, eu duo veri legendos, te eum dolorum pertinacia, impedit inciderint contentiones cu quo</p>
+                                </div>
+                                <div class="links">
+                                    <a href="https://github.com/shloch/TIC_TAC_TOE" class="fab fa-github code"
+                                        title="view on Github"> Github </a>
+                                    <a href="https://raw.githack.com/shloch/TIC_TAC_TOE/development/index.html" class='demo'>Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-6 shadow p-3 mb-5 bg-white rounded img-hover-zoom coll">
-                        <img src="img/bookstore.png" class="img-fluid">
-                        <a class="description">Bookstore App with React/Redux</a><br>
-                        <a href="https://github.com/shloch/REACT_REDUX_BOOKSTORE/" class="fab fa-github code"
-                            title="view on Github"></a>
-                        <a href="https://redux-bookstore.herokuapp.com/">Live
-                            Demo</a>
+                <div class="row second-row">
+                    <div class="col-lg-4 col-md-6 col-sm-6 coll flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/bookstore.png" class="img-fluid">
+                                <p class="description">Bookstore App with React/Redux</p>
+                            </div>
+                            <div class="shadow-sm p-3 mb-5 rounded flip-card-back">
+                                <div class='shadow p-3 mb-5 rounded detail'>
+                                    <p>Lorem ipsum dolor sit amet, eu duo veri legendos, te eum dolorum pertinacia, impedit inciderint contentiones cu quo</p>
+                                </div>
+                                <div class="links">
+                                    <a href="https://github.com/shloch/REACT_REDUX_BOOKSTORE/" class="fab fa-github code"
+                                        title="view on Github"> Github </a>
+                                    <a href="https://redux-bookstore.herokuapp.com/" class='demo'>Live
+                                        Demo</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6 shadow p-3 mb-5 bg-white rounded img-hover-zoom coll">
-                        <img src="img/todo.JPG" class="img-fluid">
-                        <a class="description">ToDo App with Javascript</a><br>
-                        <a href="https://github.com/shloch/weather_app" class="fab fa-github code"
-                            title="view on Github"></a>
-                        <a href="https://raw.githack.com/shloch/weather_app/weather_module/dist/index.html">Live
-                            Demo</a>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 flip-card coll">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/todo.JPG" class="img-fluid">
+                                <p class="description">ToDo App with Javascript</p>
+                            </div>
+                            <div class="shadow-sm p-3 mb-5 rounded flip-card-back">
+                                <div class='shadow p-3 mb-5 rounded detail'>
+                                    <p>Lorem ipsum dolor sit amet, duo veri legendos, te eum dolorum pertinacia, impedit inciderint contentiones cu quo</p>
+                                </div>
+                                <div class="links">
+                                    <a href="https://github.com/shloch/weather_app" class="fab fa-github code"
+                                        title="view on Github"> Github </a>
+                                    <a href="https://raw.githack.com/shloch/weather_app/weather_module/dist/index.html" class="demo">Live
+                                        Demo</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6 shadow p-3 mb-5 bg-white rounded img-hover-zoom coll">
-                        <img src="img/twitter.png" class="img-fluid">
-                        <a class="description">Twitter design clone(dark theme) with html/css/sass</a><br>
-                        <a href="https://github.com/shloch/Twitter-design-clone" class="fab fa-github code"
-                            title="view on Github"></a>
-                        <a href="https://raw.githack.com/shloch/Twitter-design-clone/dev/dashboard.html">Live
-                            Demo</a>
+                    <div class="col-lg-4 col-md-6 col-sm-6 flip-card coll">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/twitter.png" class="img-fluid">
+                                <p class="description">Twitter design clone(dark theme) with html/css/sass</p>
+                            </div>
+                            <div class="shadow-sm p-3 mb-5 rounded flip-card-back">
+                                <div class='shadow p-3 mb-5 rounded detail'>
+                                    <p>Lorem ipsum dolor sit amet, eu duo veri legendos, te eum dolorum pertinacia, impedit inciderint contentiones cu quo</p>
+                                </div>
+                                <div class="links">
+                                    <a href="https://github.com/shloch/Twitter-design-clone" class="fab fa-github code"
+                                        title="view on Github"> Github </a>
+                                    <a href="https://raw.githack.com/shloch/Twitter-design-clone/dev/dashboard.html" class="demo">Live
+                                        Demo</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="blog">
+   <section id="blog">
         <div class="container-fluid">
-            <div class="row paddingS">
-                <div class="col-12">
+            <div class="row">
+                <div class="col">
                     <div class="bd-example">
                         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item">
                                     <div class="carousel-caption d-md-block">
-                                        <h3>CHECK MY TECH ARTICLE</h3>
+                                        <h3>Check out my tech articles</h3>
                                         <a href="https://medium.com/@shloch2007/testing-a-javascript-function-that-writes-to-the-dom-cfcba46a7c12"
-                                            target="_blank">Testing a Javascript function that writes to the DOM .....
-                                            <span class="blinking">Go to post</span></a>
+                                            target="_blank">How to simply test a Javascript function that writes to the DOM ...
+                                            </a>
                                     </div>
                                     <div class="second color-ball">
+                                        <a href="https://medium.com/@shloch2007/testing-a-javascript-function-that-writes-to-the-dom-cfcba46a7c12" target="_blank">Go to post</a>
                                         <div class="second side-ball-1"></div>
                                         <div class="second side-ball-2"></div>
                                     </div>
                                 </div>
                                 <div class="carousel-item active">
                                     <div class="carousel-caption d-md-block">
-                                        <h3>CHECK MY TECH ARTICLE</h3>
+                                        <h3>Check out my tech articles</h3>
                                         <a href="https://shloch.wordpress.com/2016/05/21/correct-cisco-command-unrecognized-at-exam/"
-                                            target="_blank">Correct CISCO command, unrecognized at
-                                            Exam...............<span class="blinking">Go to post</span></a>
+                                            target="_blank">Correct CISCO command that are unrecognized at
+                                            Exam...............</a>
                                     </div>
                                     <div class="first color-ball">
+                                        <a href="https://shloch.wordpress.com/2016/05/21/correct-cisco-command-unrecognized-at-exam/" target="_blank">Go to post</a>
                                         <div class="first side-ball-1"></div>
                                         <div class="first side-ball-2"></div>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="carousel-caption d-md-block">
-                                        <h3>CHECK MY TECH ARTICLE</h3>
+                                        <h3>Check out my tech articles</h3>
                                         <a href="https://medium.com/@shloch2007/how-to-blink-a-text-with-ruby-c46c6eecc42c"
-                                            target="_blank">Learn how to blink a text with Ruby with this demo.....
-                                            <span class="blinking">Go to post</span></a>
+                                            target="_blank">Learn how to blink a text with Ruby with this simple example.....
+                                            </a>
                                     </div>
                                     <div class="second color-ball">
+                                        <a href="https://medium.com/@shloch2007/how-to-blink-a-text-with-ruby-c46c6eecc42c" target="_blank">Go to post</a>
                                         <div class="second side-ball-1"></div>
                                         <div class="second side-ball-2"></div>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="carousel-caption d-md-block">
-                                        <h3>CHECK MY TECH ARTICLE</h3>
+                                        <h3>Check out my tech articles</h3>
                                         <a href="https://medium.com/@shloch2007/learn-css-transition-by-imitating-smashing-magazine-b9fb25de722c"
-                                            target="_blank">CSS transition/animation by replicating
-                                            smashing magazine<span class="blinking">Go to
-                                                blog</span></a>
+                                            target="_blank"> CSS transition/animation by replicating
+                                            smashing magazine...... </a>
                                     </div>
                                     <div class="third color-ball">
+                                        <a href="https://medium.com/@shloch2007/learn-css-transition-by-imitating-smashing-magazine-b9fb25de722c" target="_blank">Go to post</a>
                                         <div class="third side-ball-1"></div>
                                         <div class="third side-ball-2"></div>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="carousel-caption d-md-block">
-                                        <h3>CHECK MY TECH ARTICLE</h3>
+                                        <h3>Check out my tech articles</h3>
                                         <a href="https://shloch.wordpress.com/2012/12/18/an-algorithm-to-determine-your-processor-performance/"
-                                            target="_blank">An algorithm to determine your processor performance...
-                                            <span class="blinking">Go to post</span></a>
+                                            target="_blank">Learn algorithms to determine your processor performance.....
+                                            </a>
                                     </div>
                                     <div class="fourth color-ball">
+                                        <a href="https://shloch.wordpress.com/2012/12/18/an-algorithm-to-determine-your-processor-performance/"
+                                            target="_blank">Go to post</a>
                                         <div class="fourth side-ball-1"></div>
                                         <div class="fourth side-ball-2"></div>
                                     </div>
                                 </div>
                             </div>
+                            
                             <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button"
                                 data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -290,24 +366,23 @@
                 </div>
             </div>
         </div>
-        <div id="footer">
-            <h2 class="about">CONTACT</h2>
-            <p>For projects, freelance work and consulatation you can contact me in one of addresses below :
-                <br /> shloch2007@yahoo.fr
-                <br /> shloch2007@gmail.com
-                <br /> <a href="https://github.com/Shloch" target="_blank" class="fab fa-github">
-
-                </a>
-                <a href="https://www.linkedin.com/in/shey-louis-chia-89315896/" target="_blank"
-                    class="fab fa-linkedin ">
-                </a>
-                <a href="https://github.com/Shloch" target="_blank" class="fab fa-github">
-                </a>
-            </p><br />
-
-        </div>
-
     </section>
+    <div id="footer">
+        <h2 class="about">CONTACT</h2>
+        <p>For projects, freelance work, and consultations, you can contact me at either of the addresses below:
+            <br /> shloch2007@yahoo.fr
+            <br /> shloch2007@gmail.com
+            <br /> <a href="https://github.com/Shloch" target="_blank" class="fab fa-github">
+
+            </a>
+            <a href="https://www.linkedin.com/in/shey-louis-chia-89315896/" target="_blank"
+                class="fab fa-linkedin ">
+            </a>
+            <a href="https://twitter.com/shloch" target="_blank" class="fab fa-twitter">
+            </a>
+        </p><br />
+
+    </div>
 
 
 

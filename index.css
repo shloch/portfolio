@@ -147,6 +147,7 @@ nav {
             max-width: 40%;
             margin-top: 35%;
         }
+
         .fab{
             margin-right: 0 30% 0 0;
         }
@@ -189,16 +190,47 @@ nav {
         .links{
             position: absolute;
             top: 90%;
-            text-align: start;
             color: rgb(243, 197, 44);
         }
+        .links .code{
+            margin-right: 3%;
+        }
         .links a{
+            color: white !important;
+            font-size: small;
+        } 
+        .links a:hover{
             color: rgb(243, 197, 44) !important;
         } 
         .links .fab{
             padding-right: 2%;
         }   
-  
+        .flip-card-inner{
+            margin-right: 3%;
+        }
+        .flip-card-front p{
+            font-size: small;
+        } 
+        #blog .color-ball{
+            display: none;
+        }
+        .carousel-control-prev {
+            display: none;
+        }
+        .carousel-control-next {
+            display: none;
+        }
+        .carousel-inner{
+            min-width: 100%;
+        }
+      
+        .carousel-item{
+            min-width: 100%;
+        }
+        
+        .carousel-caption{
+            min-width: 80%;
+        }
     }
       /*About Section */
       #about{
@@ -305,7 +337,7 @@ nav {
         }
     
         100% {
-            width: 104%;
+            width: 100%;
         };
     }
     
@@ -338,69 +370,6 @@ nav {
             width: 100%;
         };
     }
-    
-    .fixed-image{
-        background-color: #F9F9F9;
-    }
-    #skills { 
-        color:black;
-        font-weight: bold;
-        padding-top: 5%;
-        padding-bottom: 5%;
-        padding-left: 20%;
-    
-    }
-      
-    #skills .fa-code{
-        color: #e54d26;
-    }
-    #skills .fa-bold{
-        color: #563d7c;
-    }
-    #skills .fa-css3{
-        color: #2163af;
-    }
-    #skills .fa-js-square{
-        color: #E8E500;
-    }
-    #skills .fa-php{
-        color: #4647F7;
-    }
-    #skills .fa-gem{
-        color: #F3007E;
-    }
-    #skills .fa-css3, .fa-code, .fa-bold, .fa-js-square, .fa-php, .fa-gem{
-        font-size: 2em;
-        margin: 1rem;
-    }
-    #skills h3, p{
-        font-size: 1em;
-    }
-    #skills h2{
-        margin-left: 32%;
-    }
-    #skills hr{
-        border-top: 2px solid #e54d26;
-        width:30%;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        margin-left: 27%;
-    }
-    @media only screen and (max-width: 600px) {
-        #skills h2, hr{
-            margin: 0 auto;
-        }
-        #skills p, .lead{
-            display: none;
-        }
-        .about{
-            padding-top: 20%;
-        }
-        #skills .col-lg-4{
-            padding-left: 27%;
-        }
-    
-      }
 
     /* Project section */
     #projects{
@@ -617,9 +586,13 @@ nav {
 }
 
   @media only screen and (max-width: 600px) {
+    #image{
+        margin-top: 12%;
+        margin-left: 36%;
+    }
     .links{
         width: 90%;
-        left: 3%;
+        left: 10%;
         bottom: 3%;
     }
     .flip-card-back .detail p{
@@ -629,9 +602,6 @@ nav {
         font-size: small;
     }
     
-    #image{
-        margin-top: 10%;
-    }
     .background h1{
         font-size: 2em;
     }
@@ -646,8 +616,25 @@ nav {
       position: unset;
       width: 100%;
     }
+    .carousel-control-prev {
+      display: none;
+    }
+    .carousel-control-next {
+        display: none;
+    }
     .carousel-caption h3{
         font-size: 1.5em;
+    }
+    .carousel-inner{
+        max-width: 100%;
+    }
+  
+    .carousel-item{
+        max-width: 100%;
+    }
+    
+    .carousel-caption{
+        min-width: 50%;
     }
     #blog .color-ball{
         display: none;
@@ -655,6 +642,7 @@ nav {
     #blog .h5{
         font-size: 10px;
     }
+    
     #blog p{
         font-size: 5px;
     }

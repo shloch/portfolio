@@ -124,114 +124,7 @@ nav {
         color: white;
         text-decoration: none;
       }
-      @media only screen and (max-width: 990px) {
-          #sticky-top{
-              display: none;
-          }
-          .nav-link {
-            width: 90px;
-            padding-bottom: 10px;
-            padding-right: 1px;
-            margin-right:1px;
-            border: 1px solid #83D2C3;
-          
-          }
-          
-          #image{
-            position: absolute;
-            margin-left: 40%;
-            margin-top: 10%;
-          }
-          
-         #fontawesome {
-            max-width: 40%;
-            margin-top: 35%;
-        }
-
-        .fab{
-            margin-right: 0 30% 0 0;
-        }
-        .flip-card-back .detail p{
-            font-size: small;
-            
-        }
-        .links{
-            left: 15%;
-            top: 85%;
-        }
-        .links .code{
-            padding-right: 10%;
-        }
-        #image{
-            margin-top: 20%;
-            margin-left: 45%;
-        }
-        #image img{
-            width: 90px;
-            height: 90px;
-        }
     
-    }
-    @media only screen and (min-width: 995px) and (max-width: 1280px) {
-        .links{
-            margin-left: 2%;
-            text-align: start;
-            color: rgb(243, 197, 44);
-        }
-        .links a{
-            color: rgb(243, 197, 44) !important;
-        } 
-        .links .fab{
-            padding-right: 2%;
-        }   
-  
-    }
-    @media only screen and (min-width: 602px) and (max-width: 1227px) {
-        .links{
-            position: absolute;
-            top: 90%;
-            color: rgb(243, 197, 44);
-        }
-        .links .code{
-            margin-right: 3%;
-        }
-        .links a{
-            color: white !important;
-            font-size: small;
-        } 
-        .links a:hover{
-            color: rgb(243, 197, 44) !important;
-        } 
-        .links .fab{
-            padding-right: 2%;
-        }   
-        .flip-card-inner{
-            margin-right: 3%;
-        }
-        .flip-card-front p{
-            font-size: small;
-        } 
-        #blog .color-ball{
-            display: none;
-        }
-        .carousel-control-prev {
-            display: none;
-        }
-        .carousel-control-next {
-            display: none;
-        }
-        .carousel-inner{
-            min-width: 100%;
-        }
-      
-        .carousel-item{
-            min-width: 100%;
-        }
-        
-        .carousel-caption{
-            min-width: 80%;
-        }
-    }
       /*About Section */
       #about{
         margin-top: 5%;
@@ -249,34 +142,23 @@ nav {
       }
       
       .green1{
-          background-color: rgb(110, 203, 133);
         animation: green1 2s ease-out;
-        -webkit-animation: green1 2s ease-out;
       }
       .yellow1{
-        background-color: rgb(243, 197, 44);
         animation: yellow1 2s ease-out;
-        -webkit-animation: yellow1 2s ease-out;
     }
       .red1{
-        background-color:#34A092;
         animation: red1 2s ease-out;
-        -webkit-animation: red1 2s ease-out;
     }
     .orange1{
-        background-color: #FF835B;
         animation: orange1 2s ease-out;
-        -webkit-animation: orange1 2s ease-out;
     }
     
     .blue1{
-        background-color: rgb(107, 53, 35);
         animation: blue1 2s ease-out;
-        -webkit-animation: blue1 2s ease-out;
     }
     .myProgress {
         width: 100%;
-        background-color: grey;
       }
       .my-bar{
           color: white;
@@ -372,40 +254,47 @@ nav {
     }
 
     /* Project section */
-    #projects{
-        /* background-image: url(img/binary.jpg); */
-        background-repeat: no-repeat;
-        background-position: top;
-        background-size: cover;
-    }
     #projects .add-margin{
         width: 80%;
-    }
-    @media only screen and (max-width: 600px) {
-        #projects .add-margin{
-            padding-top: 28%;
-        }
     }
     .project-bg {
         margin: 0 auto;
     }
-    .project-bg h3{
-        font-size: 1.5rem;
-    }
     .project-bg .container{
         margin-bottom: 5%;
-        /* margin-top: 5%; */
+        height: auto;
     }
-    .project-bg .coll a{
-        text-decoration: none;
-        color: white;
+    .project-bg .checkout{
+        color: rgb(36, 33, 33);
+    }
+    .project-bg .checkout hr{
+        max-width: 30%;
+        background-color: #0DAEA3;
+        text-align: center;
+        margin-left: 10px;
+    }
+    .project-bg .coll .detail-section{
+       border: 2px solid #0DAEA3;
+    }
+    .project-bg .detail-section .description{
+        text-align: right;
         font-weight: bold;
+        padding-right: 1%;
     }
-    .project-bg .coll a:hover{
-        color: #F2C52C;
+    
+    .project-bg .detail-section .links{
+        text-decoration: none;
+        padding-left: 6%;
     }
-    .project-bg hr{
-        color:white;
+    .project-bg .detail-section .links a{
+        text-decoration: none;
+        color: #027BFF;
+    }
+    .project-bg .detail-section .links a:hover{
+        color: rgb(2, 204, 255);
+    }
+    .project-bg .detail-section .code{
+        padding-right: 5%;
     }
     .project-bg img{
         width: 100%;
@@ -422,231 +311,63 @@ nav {
         border-left: 6px solid #0DAEA3;
         padding-left: 1%;
     }
-    .project-bg hr{
-        max-width: 30%;
-        background-color: #0DAEA3;
-        text-align: center;
-        margin-left: 10px;
-    }
     .project-bg .first-row{
         margin-bottom: 5%;
     }
-    .links{
-        width: 80%;
-        position: absolute;
-        left: 10%;
-        bottom: 5%;
-    }
     
-    .code{
-        color: white;
-        padding-right:30%;
-    }
-    .project-bg .coll .description{
-        color: rgb(53, 16, 4);
-        margin-top: 2%;
-        font-weight: bold;
-    }
 
-    .flip-card {
-        background-color: transparent;
-        perspective: 1000px;
-        height: 200px;
-    }
-    
-    .flip-card-inner {
-        padding: 0;
-        width: 100%;
-        height: 100%;
-        transition: transform 0.6s;
-        transform-style: preserve-3d;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-      }
-      
-      .flip-card:hover .flip-card-inner {
-        transform: rotateY(180deg);
-      }
-      
-      .flip-card-front, .flip-card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-      }
-      
-      .flip-card-back {
-        background-color: #0DAEA3;
-        color: white;
-        transform: rotateY(180deg);
-        border: 3px solid #F2C52C;
-      }
-      .flip-card-back .detail{
-        background-color: black;
-        border: 5px solid white;
-        border-bottom: 8px solid #F2C52C;
-        color: white;
-        
-      }
-      .flip-card-front{
-        text-align: center;
-      }
-      .flip-card-back .detail p{
-        border-left: 2px solid grey;
-        padding-left: 2%;
-        margin-left: 5%;
-        
-      }
-
+    /* blog section */
   #blog{
-      margin-top: 8%;
-      margin-bottom: 2%;
-  }
-  
-  .carousel-inner{
-      max-width: 80%;
-      margin: 0 auto;
-      padding-top: 0;
-  }
+      width: 80%;
+      margin: 8%;
+      text-align: center;
+    }
+    #blog .article-head{
+        margin-bottom: 3%;
+        color: rgb(114, 112, 112);
+    }
+    #blog .article-post{
+        margin-bottom: 2%;
+    }
 
-  .carousel-item{
-    height: 220px;
-    margin-bottom: 5%;
-  }
-  .carousel-item .color-ball a{
-      position: absolute;
-      top: 40%;
-      left: 23%;
-      color: white;
-  }
-  .carousel-item .color-ball a:hover{
-    color:black;
-  }
-  .carousel-caption{
-      color:black;
-      width: 50%;
-  }
-  .color-ball {
-    height: 120px;
-    width: 12%;
-    border-radius:50%;
+    #blog a{
+        text-decoration: none;
+        box-sizing: inherit;
+        transition-property: all;
+        transition-duration: .6s;
+        transition-timing-function: ease;
+    }
+
+    #blog a:hover,
+    #blog a:active {
+        letter-spacing: 3px;
+    }
+
+    #blog a:after,
+    #blog a:before {
+    border: 1px solid rgb(2, 204, 255);
+    bottom: 0px;
+    content: " ";
+    display: block;
+    margin: 0 auto;
     position: relative;
-    top: 40%;
-    left: 66%;
-  }
-  .first{
-    background-color:#34A092;
-  }
-  .second{
-    background-color: #FF835B;
-  }
-  .third{
-    background-color:#6B3523;
-  }
-  .fourth{
-    background-color:#ee4ed9;
-  }
-  .side-ball-1{
-    margin-left: 86%;
-    width: 50px;
-    height: 50px;
-    border-radius:50%;
-  }
-  .side-ball-2{
-    margin-left: 86%;
-    margin-top: 5%;
-    width: 50px;
-    height: 50px;
-    border-radius:50%;
-  }
-  .carousel-item a{
-    text-decoration: none;
-  }
-  .carousel-control-prev{
-    width: 10%;
-    background-color: #0DAEA3;
-    height: 50%;
-    margin-top: 5%;
-    
-  }
-  .carousel-control-prev-icon{
-      width: 30px;
-      height: 30px;
-  }
-  .carousel-control-next{
-    width: 10%;
-    background-color: #0DAEA3;
-    height: 50%;
-    margin-top: 5%;
-    
-  }
-  .carousel-control-next-icon{
-    width: 30px;
-    height: 30px;
-}
+    transition: all 1000ms ease-in-out;
+    width: 0;
+    }
 
-  @media only screen and (max-width: 600px) {
-    #image{
-        margin-top: 12%;
-        margin-left: 36%;
+    #blog a:hover:after,
+    #blog a:hover:before {
+        border-top: 1px solid rgb(2, 204, 255);
+        transition: width 1000ms ease-in-out;
+        width: 60%;
     }
-    .links{
-        width: 90%;
-        left: 10%;
-        bottom: 3%;
+
+    #blog a:hover:before {
+        bottom: auto;
+        top: 0;
+        width: 60%;
     }
-    .flip-card-back .detail p{
-        border-left: 1px dotted grey;
-        padding-left: 1px;
-        margin-left: 0em;
-        font-size: small;
-    }
-    
-    .background h1{
-        font-size: 2em;
-    }
-    .background p{
-        font-size: large;
-    }
-    .project-bg .coll{
-        margin-bottom: 5%;
-    }
-    .carousel-caption {
-        margin-top: 3%;
-      position: unset;
-      width: 100%;
-    }
-    .carousel-control-prev {
-      display: none;
-    }
-    .carousel-control-next {
-        display: none;
-    }
-    .carousel-caption h3{
-        font-size: 1.5em;
-    }
-    .carousel-inner{
-        max-width: 100%;
-    }
-  
-    .carousel-item{
-        max-width: 100%;
-    }
-    
-    .carousel-caption{
-        min-width: 50%;
-    }
-    #blog .color-ball{
-        display: none;
-    }
-    #blog .h5{
-        font-size: 10px;
-    }
-    
-    #blog p{
-        font-size: 5px;
-    }
-}
+
 /* footer section */
 #footer{
     background-color: black;
@@ -658,6 +379,39 @@ nav {
     color: rgb(250, 118, 98);
 }
 @media only screen and (max-width: 600px) {
+    #image{
+        margin-top: 12%;
+        margin-left: 36%;
+    }
+    /* projects */
+    .project-bg .container{
+        margin-bottom: 25%;
+    }
+    .project-bg .container h3{
+        color: black;
+        font-size: 1.5em;
+    }
+    .project-bg .container hr{
+        min-width: 50%;
+    }
+    .project-bg .detail-section .description{
+        text-align: left;
+    }
+    /* blog */
+    #blog{
+        width: 100%;
+        margin: 8% 0 8% 0;
+        text-align: center;
+      }
+    #blog .article-head{
+        min-width: 80%;
+        margin-bottom: 5%;
+    }
+    #blog .article-post{
+        margin-bottom: 5%;
+    }
+
+    /* footer */
     #footer{
         padding-left: 0;
         min-width: 100%;
@@ -669,4 +423,55 @@ nav {
     #footer p{
         font-size: 15px;
     }
+}
+
+@media only screen and (min-width: 995px) and (max-width: 1280px) {
+   
+}
+@media only screen and (min-width: 602px) and (max-width: 1227px) {
+   
+}
+@media only screen and (max-width: 990px) {
+    .project-bg .container{
+        margin-bottom: 25%;
+    }
+    .project-bg .detail-section .description{
+        text-align: left;
+    }
+    #sticky-top{
+        display: none;
+    }
+    .nav-link {
+      width: 90px;
+      padding-bottom: 10px;
+      padding-right: 1px;
+      margin-right:1px;
+      border: 1px solid #83D2C3;
+    
+    }
+    
+    #image{
+      position: absolute;
+      margin-left: 40%;
+      margin-top: 10%;
+    }
+    
+   #fontawesome {
+      max-width: 40%;
+      margin-top: 35%;
+  }
+
+  .fab{
+      margin-right: 0 30% 0 0;
+  }
+  
+  #image{
+      margin-top: 20%;
+      margin-left: 45%;
+  }
+  #image img{
+      width: 90px;
+      height: 90px;
+  }
+
 }

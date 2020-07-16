@@ -471,7 +471,7 @@ nav {
     
     #image{
       position: absolute;
-      margin-left: 40%;
+      
       margin-top: 10%;
     }
     
@@ -484,10 +484,7 @@ nav {
       margin-right: 0 30% 0 0;
   }
   
-  #image{
-      /* margin-top: 20%;
-      margin-left: 45%; */
-  }
+  
   #image img{
       width: 90px;
       height: 90px;

@@ -159,10 +159,15 @@ nav {
     }
     .myProgress {
         width: 100%;
+        border: 1px solid black;
+        margin: 1%;
+        text-align: center;
+        vertical-align: middle;
       }
       .my-bar{
-          color: white;
-          padding-left: 2%;
+          /* color: white; */
+          /* padding-left: 2%; */
+         
       }
      
       @-moz-keyframes green1 {
@@ -277,7 +282,7 @@ nav {
        border: 2px solid #0DAEA3;
     }
     .project-bg .detail-section .description{
-        text-align: right;
+        /* text-align: right; */
         font-weight: bold;
         padding-right: 1%;
     }
@@ -288,7 +293,7 @@ nav {
     }
     .project-bg .detail-section .links a{
         text-decoration: none;
-        color: #027BFF;
+        color: #0DAEA3;
     }
     .project-bg .detail-section .links a:hover{
         color: rgb(2, 204, 255);
@@ -329,6 +334,9 @@ nav {
     #blog .article-post{
         margin-bottom: 2%;
     }
+    #blog .article-post a:hover {
+        color:black;
+    }
 
     #blog a{
         text-decoration: none;
@@ -345,7 +353,7 @@ nav {
 
     #blog a:after,
     #blog a:before {
-    border: 1px solid rgb(2, 204, 255);
+    border: 1px solid #0DAEA3;
     bottom: 0px;
     content: " ";
     display: block;
@@ -357,15 +365,17 @@ nav {
 
     #blog a:hover:after,
     #blog a:hover:before {
-        border-top: 1px solid rgb(2, 204, 255);
+        border-top: 1px solid #0DAEA3;
         transition: width 1000ms ease-in-out;
         width: 60%;
+        /* color: black; */
     }
 
     #blog a:hover:before {
         bottom: auto;
         top: 0;
         width: 60%;
+        /* color: black; */
     }
 
 /* footer section */

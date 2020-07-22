@@ -62,6 +62,7 @@ nav {
     align-items: center;
     margin-left: 25%;
     margin-top: 15px;
+    margin: auto;
   }
   
   /* The sticky class is added to the nav with JS when it reaches its scroll position to maintain a fixed position */
@@ -400,7 +401,7 @@ nav {
 @media only screen and (max-width: 600px) {
     #image{
         margin-top: 12%;
-        margin-left: 36%;
+        /* margin-left: 36%; */
     }
     /* projects */
     .project-bg .container{
@@ -470,7 +471,7 @@ nav {
     }
     
     #image{
-      position: absolute;
+      /* position: absolute; */
       
       margin-top: 10%;
     }
